@@ -73,6 +73,7 @@ ul {
 }
 
 .lang-item {
+  position: relative;
   margin-left: 15px;
 }
 
@@ -92,6 +93,25 @@ ul {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-five);
+}
+
+.lang-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-two);
+  opacity: 0;
+}
+
+.current {
+  color: var(--color-two);
+}
+
+.current.lang-link::after {
+  opacity: 1;
 }
 
 .header-icon {
