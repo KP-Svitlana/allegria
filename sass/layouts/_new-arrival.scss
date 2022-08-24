@@ -1,0 +1,78 @@
+.na-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+
+.new-arrival-nav {
+  position: relative;
+}
+
+.new-arrival-title {
+  font-family: 'Cormorant Garamond';
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 1.02;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 50px;
+  padding-top: 150px;
+  width: calc(100% / 2 - 80px);
+}
+
+.new-arrival-text {
+  line-height: 1.36;
+  color: #ffffff;
+  padding-left: 50px;
+  padding-top: 15px;
+  width: 468px;
+}
+
+.new-arrival-btn {
+  border: none;
+  background-color: transparent;
+  line-height: 1.38;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: var(--color-three);
+  padding-left: 50px;
+  padding-top: 34px;
+}
+
+.na-nav {
+  position: absolute;
+  top: 0;
+}
+
+.new-arrival-decor {
+  position: relative;
+  width: calc(100% / 2 + 80px);
+  background-color: #cec6c4;
+}
+
+.n-a-d-fon {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 600px;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.n-a-d-img {
+  position: absolute;
+  top: 160px;
+  left: 210px;
+  width: 380px;
+  height: 380px;
+}
+
+.n-a-d-text {
+  position: absolute;
+  bottom: 174px;
+  left: 245px;
+  line-height: 1.36;
+  text-align: center;
+  color: #ffffff;
+  width: 310px;
+}

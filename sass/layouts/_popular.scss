@@ -1,0 +1,57 @@
+.popular-container {
+  padding-top: 120px;
+}
+
+.popular-title {
+  margin-bottom: 75px;
+  font-family: 'Cormorant';
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: var(--color-five);
+}
+
+.popular-list {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+}
+
+.popular-heading {
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px1.45;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-five);
+}
+
+.popular-data {
+  font-family: 'Jost';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: capitalize;
+  color: #254a5a;
+}
+
+.popular-price {
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  color: #fd5454;
+}
+
+.old-price {
+  color: #cecece;
+  text-decoration: line-through;
+  margin-right: 5.5px;
+}
