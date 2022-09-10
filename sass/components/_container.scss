@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 375px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+  @include descktop {
+    width: 1440px;
+  }
+}

@@ -23,12 +23,6 @@ ul {
   padding: 0;
 }
 
-.container {
-  width: 1440px;
-  height: auto;
-  margin: 0 auto;
-}
-
 .list {
   list-style: none;
 }
@@ -50,6 +44,27 @@ img {
   font-size: 16px;
   line-height: 1.38;
   letter-spacing: 0.045em;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
 }
 
 .header-flex {
