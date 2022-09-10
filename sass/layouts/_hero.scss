@@ -1,31 +1,38 @@
 .hero {
   text-align: center;
-  padding-top: 180px;
-  padding-bottom: 340px;
+  padding: 166px 0;
   margin: 0 auto;
 
   background-color: grey;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/hero-fon.jpg);
+  background-image: var(--gradient), url(../img/hero/hero-fon_mobile.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
-  max-width: 1440px;
+
+  @include retina {
+    background-image: var(--gradient), url(../img/hero/hero-fon_mobile@2x.jpg);
+  }
+
+  @include tablet {
+    padding: 167px 0;
+    background-image: var(--gradient), url(../../img/hero/hero-fon_tablet.jpg);
+    @include retina {
+      background-image: var(--gradient), url(../../img/hero/hero-fon_tablet@2x.jpg);
+    }
+  }
+
+  @include descktop {
+    padding: 180px 0 275px 0;
+    background-image: var(--gradient), url(../../img/hero/hero-fon.jpg);
+    @include retina {
+      background-image: var(--gradient), url(../../img/hero/hero-fon@2x.jpg);
+    }
+  }
 }
 
-.hero-title {
-  font-size: 40px;
+.hero__title {
+  font-size: 30px;
   margin-bottom: 35px;
-}
-
-.hero-text {
-  text-align: center;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
-  color: var(--color-three);
-}
-
-.title-h {
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 500;
@@ -33,26 +40,35 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-three);
+
+  @include descktop {
+    font-size: 40px;
+  }
 }
 
-.hero-pre-title {
+.hero__title--font {
   font-size: 20px;
 }
 
-.hero-counter-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 233;
-}
-
-.hero-counter-link {
-  font-family: 'Tajawal';
+.hero__text {
+  font-family: 'Avenir';
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-three);
 }
+
+// .hero-counter-link {
+//   font-family: 'Tajawal';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.2;
+//   text-align: center;
+//   letter-spacing: 0.1em;
+//   text-transform: uppercase;
+//   color: var(--color-three);
+// }
