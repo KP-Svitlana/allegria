@@ -14,3 +14,11 @@
     width: 1440px;
   }
 }
+
+.container--flex {
+  display: block;
+
+  @include descktop {
+    display: flex;
+  }
+}

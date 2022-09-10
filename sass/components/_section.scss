@@ -1,3 +1,15 @@
+.section {
+  padding-top: 100px;
+
+  @include tablet {
+    padding-top: 125px;
+  }
+
+  @include descktop {
+    padding-top: 120px;
+  }
+}
+
 header,
 section,
 footer {
