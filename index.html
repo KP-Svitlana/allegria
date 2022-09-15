@@ -93,7 +93,26 @@
       <section class="section section--on">
         <div class="container container--flex">
           <div class="new-arrival-left">
-            <img src="./img/na_1_mobile.jpg" alt="foto new arrival" class="new-arrival-left__img" />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="./img/na_1_desktop.jpg 1x, ./img/na_1_desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/na_1_tablet.jpg 1x, ./img/na_1_tablet@2x.jpg 2x"
+              />
+              <source
+                media="(max-width: 375px)"
+                srcset="./img/na_1_mobile.jpg 1x, ./img/na_1_mobile@2x.jpg 2x"
+              />
+              <img
+                src="./img/na_1_mobile.jpg"
+                alt="foto new arrival"
+                class="new-arrival-left__img"
+              />
+            </picture>
+
             <div class="new-arrival-left__box">
               <h1 class="new-arrival-left__title">
                 New <br />
@@ -108,7 +127,22 @@
           </div>
           <div class="new-arrival-right">
             <div class="new-arrival-right__cover"></div>
-            <img src="./img/na_2_mobile.jpg" alt="two girls" class="new-arrival-right__img" />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="./img/na_2_desktop.jpg 1x, ./img/na_2_desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/na_1_tablet.jpg 1x, ./img/na_1_tablet@2x.jpg 2x"
+              />
+              <source
+                media="(max-width: 375px)"
+                srcset="./img/na_2_mobile.jpg 1x, ./img/na_2_mobile@2x.jpg 2x"
+              />
+              <img src="./img/na_2_mobile.jpg" alt="two girls" class="new-arrival-right__img" />
+            </picture>
+
             <p class="new-arrival-right__text">
               Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipLorem ipsumLorem ip
             </p>
